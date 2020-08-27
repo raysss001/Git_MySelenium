@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.payasia.scripts.LoginTest">
+        <methods>
+          <include name="invalidLoginTest4"/>
+          <include name="invalidLoginTest5"/>
+          <include name="invalidLoginTest6"/>
+          <include name="setUp1"/>
+          <include name="forgotUsername"/>
+          <include name="forgotPassword"/>
+          <include name="invalidLoginTest3"/>
+          <include name="validLoginTest"/>
+          <include name="tearDown"/>
+          <include name="invalidLoginTest7"/>
+          <include name="invalidLoginTest1"/>
+          <include name="invalidLoginTest2"/>
+        </methods>
+      </class> <!-- com.payasia.scripts.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
