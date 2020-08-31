@@ -8,6 +8,7 @@ import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtils {
 	
@@ -19,7 +20,7 @@ public class ExcelUtils {
 		
 		String value=null;
 		try {
-			Workbook wb= WorkbookFactory.create(new FileInputStream(new File(filePath)));
+			XSSFWorkbook wb= (XSSFWorkbook) WorkbookFactory.create(new FileInputStream(new File(filePath)));
 			value=wb.getSheet(sheetName).getRow(rowNum).getCell(cellNum).getStringCellValue();
 		} catch (EncryptedDocumentException e) {
 			// TODO Auto-generated catch block
@@ -33,7 +34,10 @@ public class ExcelUtils {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}		
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
 		
 		return value;
 		
