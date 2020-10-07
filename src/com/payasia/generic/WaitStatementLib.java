@@ -55,8 +55,11 @@ public class WaitStatementLib {
 	{
 		
 		WebDriverWait wait= new WebDriverWait(driver,sec);
+		try {
 		wait.until(ExpectedConditions.visibilityOf(ele));
-		
+		}catch(NullPointerException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	

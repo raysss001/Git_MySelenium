@@ -6,18 +6,9 @@
     <classes>
       <class name="com.payasia.scripts.LoginTest">
         <methods>
-          <include name="invalidLoginTest4"/>
-          <include name="invalidLoginTest5"/>
-          <include name="invalidLoginTest6"/>
           <include name="setUp1"/>
-          <include name="forgotUsername"/>
-          <include name="forgotPassword"/>
-          <include name="invalidLoginTest3"/>
           <include name="validLoginTest"/>
           <include name="tearDown"/>
-          <include name="invalidLoginTest7"/>
-          <include name="invalidLoginTest1"/>
-          <include name="invalidLoginTest2"/>
         </methods>
       </class> <!-- com.payasia.scripts.LoginTest -->
     </classes>

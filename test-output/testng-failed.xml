@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.payasia.scripts.AdminHrLetterTest">
+      <class name="com.payasia.scripts.LoginTest">
         <methods>
-          <include name="HRLetter"/>
           <include name="setUp1"/>
+          <include name="validLoginTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.payasia.scripts.AdminHrLetterTest -->
+      </class> <!-- com.payasia.scripts.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

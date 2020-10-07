@@ -11,7 +11,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelUtils {
 	
-	static final String filePath="E:\\NewDevWorkspaces\\Angular\\testData\\testData.xlsx";
+	static final String filePath="C:\\Users\\kiran\\eclipse-workspace\\MySelenium\\testData\\testData.xlsx";
 	
 	
 	public static String readData(String sheetName,int rowNum, int cellNum)

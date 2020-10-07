@@ -17,7 +17,7 @@ import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class BaseLib {
-	public WebDriver driver;	
+	public WebDriver driver;
 	@BeforeMethod
 	@Parameters("browser")
 	public void setUp1(String browserName)
@@ -63,7 +63,7 @@ public class BaseLib {
 	
 	
            driver.manage().window().maximize();
-	       driver.get("https://minddemo.test-hronline-payasia.asia/beta#/login");
+	       driver.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
 	       //driver.manage().window().setPosition(new Point(0, -2000));
 	       Reporter.log("Navigating to URL",true);
 		

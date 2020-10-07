@@ -17,7 +17,7 @@ public class ScreenshotLib {
 		
 		EventFiringWebDriver efw= new EventFiringWebDriver(driver); 
 		File srcFile = efw.getScreenshotAs(OutputType.FILE);
-		File destFile = new File(".\\screenshots/"+ fileName);
+		File destFile = new File(".\\MySelenium\\screenshots"+ fileName);
 		
 			try {
 			FileUtils.copyFile(srcFile,destFile);
