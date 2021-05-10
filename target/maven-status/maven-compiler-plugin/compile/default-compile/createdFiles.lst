@@ -3,6 +3,8 @@ com\payasia\generic\WaitStatementLib.class
 com\payasia\pageobjects\LoginPage.class
 com\payasia\generic\BaseLib.class
 com\payasia\pageobjects\BasePage.class
+com\payasia\generic\ListenerReport.class
+com\payasia\scripts\ExtentDemo.class
 com\payasia\scripts\LoginTest.class
 com\payasia\generic\FunctionsLib.class
 com\payasia\generic\GetPropertyValue.class

@@ -5,21 +5,18 @@
       <![CDATA[Chrome Launched]]>
     </line>
     <line>
-      <![CDATA[Navigating to URL]]>
-    </line>
-    <line>
       <![CDATA[Script Passed]]>
     </line>
     <line>
       <![CDATA[Browser is closed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="75047" started-at="2020-10-07T06:47:17Z" finished-at="2020-10-07T06:48:32Z">
+  <suite name="Suite" duration-ms="37797" started-at="2021-05-10T06:46:55Z" finished-at="2021-05-10T06:47:32Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="75047" started-at="2020-10-07T06:47:17Z" finished-at="2020-10-07T06:48:32Z">
+    <test name="Test" duration-ms="37797" started-at="2021-05-10T06:46:55Z" finished-at="2021-05-10T06:47:32Z">
       <class name="com.payasia.scripts.LoginTest">
-        <test-method status="PASS" signature="setUp1(java.lang.String)[pri:0, instance:com.payasia.scripts.LoginTest@7946e1f4]" name="setUp1" is-config="true" duration-ms="24908" started-at="2020-10-07T12:17:17Z" finished-at="2020-10-07T12:17:42Z">
+        <test-method status="PASS" signature="setUp1(java.lang.String)[pri:0, instance:com.payasia.scripts.LoginTest@5f375618]" name="setUp1" is-config="true" duration-ms="7934" started-at="2021-05-10T12:16:55Z" finished-at="2021-05-10T12:17:03Z">
           <params>
             <param index="0">
               <value>
@@ -31,20 +28,17 @@
             <line>
               <![CDATA[Chrome Launched]]>
             </line>
-            <line>
-              <![CDATA[Navigating to URL]]>
-            </line>
           </reporter-output>
         </test-method> <!-- setUp1 -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.payasia.scripts.LoginTest@7946e1f4]" name="validLoginTest" duration-ms="43158" started-at="2020-10-07T12:17:42Z" finished-at="2020-10-07T12:18:26Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.payasia.scripts.LoginTest@5f375618]" name="validLoginTest" duration-ms="29175" started-at="2021-05-10T12:17:03Z" finished-at="2021-05-10T12:17:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.payasia.scripts.LoginTest@7946e1f4]" name="tearDown" is-config="true" duration-ms="6597" started-at="2020-10-07T12:18:26Z" finished-at="2020-10-07T12:18:32Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.payasia.scripts.LoginTest@5f375618]" name="tearDown" is-config="true" duration-ms="302" started-at="2021-05-10T12:17:32Z" finished-at="2021-05-10T12:17:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validLoginTest status=SUCCESS method=LoginTest.validLoginTest()[pri:0, instance:com.payasia.scripts.LoginTest@7946e1f4] output={null}]]]>
+                <![CDATA[[TestResult name=validLoginTest status=SUCCESS method=LoginTest.validLoginTest()[pri:0, instance:com.payasia.scripts.LoginTest@5f375618] output={null}]]]>
               </value>
             </param>
           </params>

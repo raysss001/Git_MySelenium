@@ -72,7 +72,7 @@ public class BaseLib {
 	}
 	
 	
-//	public WebDriver drive()
+//	public WebDriver getDriver()
 //	{			
 //		return driver;
 //		
@@ -85,6 +85,7 @@ public class BaseLib {
 	@AfterMethod
 	public void tearDown(ITestResult result)
 	{   
+		System.out.println("Control in TearDown");
 		if(result.isSuccess())
 		{
 			Reporter.log("Script Passed",true);			

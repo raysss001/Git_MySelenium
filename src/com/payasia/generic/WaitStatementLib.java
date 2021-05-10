@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitStatementLib {
-	WebDriver driver;
+	//WebDriver driver;
 	public static void iSleep(int sec)
 	{
 		try {
@@ -51,14 +51,14 @@ public class WaitStatementLib {
 	
 	
 	
-	public static void explicitWaitVisibility(WebDriver driver, int sec, WebElement ele)
+	public static void explicitWaitVisibility(WebDriver driver, int sec, WebElement ele,String name)
 	{
 		
 		WebDriverWait wait= new WebDriverWait(driver,sec);
 		try {
 		wait.until(ExpectedConditions.visibilityOf(ele));
-		}catch(NullPointerException e) {
-			e.printStackTrace();
+		}catch(Exception e) {
+			System.out.println("ELEMENT NOT VISIBLE : "+ name);
 		}
 	}
 	
@@ -67,12 +67,15 @@ public class WaitStatementLib {
 	/****************/
 	
 	
-	public static void explicitWaitForClickable(WebDriver driver, int sec, WebElement ele)
+	public static void explicitWaitForClickable(WebDriver driver, int sec, WebElement ele, String name)
 	{
 		
 		WebDriverWait wait= new WebDriverWait(driver,sec);
+		try {
 		wait.until(ExpectedConditions.elementToBeClickable(ele));
-		
+		}catch(Exception e) {
+			System.out.println("ELEMENT NOT VISIBLE : "+ name);
+		}
 	}
 	
 	
