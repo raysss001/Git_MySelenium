@@ -24,6 +24,7 @@ public class LoginTest extends FunctionsLib{
 		lp.login(username, password);
 		iSleep(10);
 		lp.verifyValidLoginMsg();	
+		System.out.println("BrowserName");
 		
 	}
 	
@@ -37,9 +38,10 @@ public class LoginTest extends FunctionsLib{
 		iSleep(10);
 		lp.verifyValidLoginMsg();	
 		
-	}
+		
+	}*/
 	
-	*/
+	
 	
 
 }
