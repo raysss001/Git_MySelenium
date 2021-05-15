@@ -34,7 +34,9 @@ public class BaseLib {
 			String value="C:\\Users\\kiran\\eclipse-workspace\\Payasia\\exe\\chromedriver.exe";
 			System.setProperty(key, value);
 			driver=new ChromeDriver();			
-			Reporter.log("Chrome Launched",true);		
+			//Reporter.log("Chrome Launched",true);
+			String s= System.getProperty("BrowserName");
+			Reporter.log(s,true);		
 		} 
 	
 	
