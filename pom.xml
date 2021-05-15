@@ -70,7 +70,7 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<systemPropertyVariables>
-					<BrowserName>${BrowserName}</BrowserName>					
+					<BrowserName>${DBrowserName}</BrowserName>					
 					</systemPropertyVariables>>
 				</configuration>
 			</plugin>
