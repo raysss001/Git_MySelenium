@@ -35,7 +35,7 @@ public class BaseLib {
 			System.setProperty(key, value);
 			driver=new ChromeDriver();			
 			//Reporter.log("Chrome Launched",true);
-			String s= System.getProperty("BrowserName");
+			String s= System.getProperty("BrowserName")+" YAHOOOOO";
 			Reporter.log(s,true);		
 		} 
 	
