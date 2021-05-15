@@ -69,9 +69,9 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					<systemPropertVariables>
+					<systemPropertyVariables>
 					<BrowserName>${JBrowserName}</BrowserName>					
-					</systemPropertVariables>>
+					</systemPropertyVariables>>
 				</configuration>
 			</plugin>
 		</plugins>

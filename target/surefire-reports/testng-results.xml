@@ -11,12 +11,12 @@
       <![CDATA[Browser is closed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="47273" started-at="2021-05-14T14:58:45Z" finished-at="2021-05-14T14:59:33Z">
+  <suite name="Suite" duration-ms="37866" started-at="2021-05-15T11:07:47Z" finished-at="2021-05-15T11:08:25Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="47273" started-at="2021-05-14T14:58:45Z" finished-at="2021-05-14T14:59:33Z">
+    <test name="Test" duration-ms="37866" started-at="2021-05-15T11:07:47Z" finished-at="2021-05-15T11:08:25Z">
       <class name="com.payasia.scripts.LoginTest">
-        <test-method status="PASS" signature="setUp1(java.lang.String)[pri:0, instance:com.payasia.scripts.LoginTest@5f375618]" name="setUp1" is-config="true" duration-ms="10330" started-at="2021-05-14T20:28:46Z" finished-at="2021-05-14T20:28:56Z">
+        <test-method status="PASS" signature="setUp1(java.lang.String)[pri:0, instance:com.payasia.scripts.LoginTest@5f375618]" name="setUp1" is-config="true" duration-ms="7836" started-at="2021-05-15T16:37:47Z" finished-at="2021-05-15T16:37:55Z">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp1 -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.payasia.scripts.LoginTest@5f375618]" name="validLoginTest" duration-ms="36319" started-at="2021-05-14T20:28:56Z" finished-at="2021-05-14T20:29:32Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.payasia.scripts.LoginTest@5f375618]" name="validLoginTest" duration-ms="29535" started-at="2021-05-15T16:37:55Z" finished-at="2021-05-15T16:38:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.payasia.scripts.LoginTest@5f375618]" name="tearDown" is-config="true" duration-ms="306" started-at="2021-05-14T20:29:32Z" finished-at="2021-05-14T20:29:33Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.payasia.scripts.LoginTest@5f375618]" name="tearDown" is-config="true" duration-ms="183" started-at="2021-05-15T16:38:24Z" finished-at="2021-05-15T16:38:25Z">
           <params>
             <param index="0">
               <value>
