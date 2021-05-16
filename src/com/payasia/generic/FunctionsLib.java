@@ -33,11 +33,12 @@ public class FunctionsLib extends ListenerReport{
 			element.sendKeys(value);	
 			logTestInfo("ELEMENT INPUT SEND : "+ name);
 		}catch(Exception e) {
-			logTestInfo("ELEMENT INPUT NOT SEND : "+ name);
+			
 		}	
 		
+		logTestInfo("ELEMENT INPUT NOT SEND : "+ name);
 		logTestInfo("BROWSER NAME IS 1 = ");
-		logTestInfo("BROWSER NAME IS 2 = "+System.getProperty("BROWSERNAME"));
+		logTestInfo("BROWSER NAME IS 2 = "+System.getProperty("BrowserName"));
 	}
 
 
