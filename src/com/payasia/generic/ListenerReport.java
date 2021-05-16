@@ -74,7 +74,7 @@ public class ListenerReport implements ITestListener, ISuiteListener {
 		logrepo = extent.createTest("LoginTest");
 		logrepo.log(Status.INFO,"Login to Amazon");
 		logrepo.log(Status.PASS, "Title Verifiedddddddddd");
-		logrepo.log(Status.PASS, System.getProperty("BROWSERNAME"));
+		logrepo.log(Status.PASS, System.getProperty("BrowserName"));
 		
 
 
