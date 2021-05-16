@@ -133,11 +133,13 @@ public class ListenerReport implements ITestListener, ISuiteListener {
 	Reporter.log("Firefox Launched.",true);
 	}
 	else if(browserName.equalsIgnoreCase("chrome"))
-	{	String key="webdriver.chrome.driver";
-	String value="C:\\Users\\kiran\\eclipse-workspace\\MySelenium\\exe\\chromedriver.exe";
-	System.setProperty(key, value);
-	driver=new ChromeDriver();			
-	Reporter.log("Chrome Launched",true);		
+	{	
+		System.out.println(System.getProperty("BrowserName"));
+		String key="webdriver.chrome.driver";
+		String value="C:\\Users\\kiran\\eclipse-workspace\\MySelenium\\exe\\chromedriver.exe";
+		System.setProperty(key, value);
+		driver=new ChromeDriver();			
+		Reporter.log("Chrome Launched",true);		
 	} 
 
 	driver.manage().window().maximize();
@@ -185,29 +187,29 @@ public class ListenerReport implements ITestListener, ISuiteListener {
 		log.info(msg);
 		logrepo.log(Status.INFO, msg);
 	}
-	
+
 	public void logTestInfo(String msg) {
 		log.info(msg);
 		logrepo.log(Status.INFO, msg);
 	}
-	
+
 	public void logTestPass(String msg) {
 		log.info(msg);
 		logrepo.log(Status.PASS, msg);
 	}
-	
+
 	public void logTestPassSnap(String msg) {
 		log.info(msg);
 		logrepo.log(Status.PASS, msg);
-		
+
 	}
-	
+
 	public void logTestFail(String msg) {
 		log.info(msg);
 		logrepo.log(Status.FAIL, msg);
 		Assert.fail(msg);
 	}
-	
+
 	public void logTestFailSnap(String msg) {
 		System.out.println("Hello");
 		log.info(msg);
