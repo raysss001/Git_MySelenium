@@ -36,7 +36,8 @@ public class FunctionsLib extends ListenerReport{
 			logTestInfo("ELEMENT INPUT NOT SEND : "+ name);
 		}	
 		
-		logTestInfo("BROWSER NAME IS = "+System.getProperty("BROWSERNAME"));
+		logTestInfo("BROWSER NAME IS 1 = ");
+		logTestInfo("BROWSER NAME IS 2 = "+System.getProperty("BROWSERNAME"));
 	}
 
 
