@@ -21,7 +21,7 @@ public class LoginTest extends FunctionsLib{
 		System.out.println("BROWSER NAME PASSED FROM JENKINS IS = ");
 		System.out.println(System.getProperty("BrowserName"));
 		LoginPage lp=new LoginPage(driver);
-		String username= ExcelUtils.readData("Login", 1, 1);
+		String username= ExcelUtils.readData("Login", 1, 2);
 		String password= ExcelUtils.readData("Login", 1, 2);
 		lp.login(username, password);
 		iSleep(10);
