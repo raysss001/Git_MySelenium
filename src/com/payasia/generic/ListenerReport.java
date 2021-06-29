@@ -68,7 +68,8 @@ public class ListenerReport implements ITestListener, ISuiteListener {
 	public void onStart(ITestContext Result) {
 		System.out.println("onStart-ITestContext");
 		log= Logger.getLogger(ListenerReport.class);
-		reporter = new ExtentHtmlReporter("C:\\My_Selenium\\Report\\extent_report_"+sdf.format(new Date())+".html");
+		//reporter = new ExtentHtmlReporter("C:\\My_Selenium\\Report\\extent_report_"+sdf.format(new Date())+".html");
+		reporter = new ExtentHtmlReporter("C:\\My_Selenium\\Report\\extent_report.html");
 		extent = new ExtentReports();  
 		extent.attachReporter(reporter);
 		logrepo = extent.createTest("LoginTest");
