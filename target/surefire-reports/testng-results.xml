@@ -14,12 +14,12 @@
       <![CDATA[Browser is closed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="92752" started-at="2021-06-25T07:58:19Z" finished-at="2021-06-25T07:59:52Z">
+  <suite name="Suite" duration-ms="92094" started-at="2021-07-03T18:34:23Z" finished-at="2021-07-03T18:35:55Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="92752" started-at="2021-06-25T07:58:19Z" finished-at="2021-06-25T07:59:52Z">
+    <test name="Test" duration-ms="92094" started-at="2021-07-03T18:34:23Z" finished-at="2021-07-03T18:35:55Z">
       <class name="com.payasia.scripts.LoginTest">
-        <test-method status="PASS" signature="setUp1(java.lang.String)[pri:0, instance:com.payasia.scripts.LoginTest@5f375618]" name="setUp1" is-config="true" duration-ms="8843" started-at="2021-06-25T13:28:20Z" finished-at="2021-06-25T13:28:29Z">
+        <test-method status="PASS" signature="setUp1(java.lang.String)[pri:0, instance:com.payasia.scripts.LoginTest@5f375618]" name="setUp1" is-config="true" duration-ms="8260" started-at="2021-07-04T00:04:24Z" finished-at="2021-07-04T00:04:32Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp1 -->
-        <test-method status="FAIL" signature="validLoginTest()[pri:0, instance:com.payasia.scripts.LoginTest@5f375618]" name="validLoginTest" duration-ms="83158" started-at="2021-06-25T13:28:29Z" finished-at="2021-06-25T13:29:52Z">
+        <test-method status="FAIL" signature="validLoginTest()[pri:0, instance:com.payasia.scripts.LoginTest@5f375618]" name="validLoginTest" duration-ms="83057" started-at="2021-07-04T00:04:32Z" finished-at="2021-07-04T00:05:55Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Wait limit exceeded : Logout Button -- Element Not Found.]]>
@@ -41,7 +41,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Wait limit exceeded : Logout Button -- Element Not Found.
 	at org.junit.Assert.fail(Assert.java:88)
-	at com.payasia.generic.ListenerReport.logTestFailSnap(ListenerReport.java:220)
+	at com.payasia.generic.ListenerReport.logTestFailSnap(ListenerReport.java:222)
 	at com.payasia.generic.FunctionsLib.explicitWaitVisibility(FunctionsLib.java:138)
 	at com.payasia.pageobjects.LoginPage.verifyValidLoginMsg(LoginPage.java:79)
 	at com.payasia.scripts.LoginTest.validLoginTest(LoginTest.java:28)
@@ -80,7 +80,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.payasia.scripts.LoginTest@5f375618]" name="tearDown" is-config="true" duration-ms="447" started-at="2021-06-25T13:29:52Z" finished-at="2021-06-25T13:29:52Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.payasia.scripts.LoginTest@5f375618]" name="tearDown" is-config="true" duration-ms="473" started-at="2021-07-04T00:05:55Z" finished-at="2021-07-04T00:05:55Z">
           <params>
             <param index="0">
               <value>
