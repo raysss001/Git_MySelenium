@@ -25,7 +25,6 @@ public class WaitStatementLib {
 	/*******************/
 	
 	
-	
 	public static void ImplicitWaitForSeconds(WebDriver driver, int sec)
 	{
 		
