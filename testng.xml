@@ -5,10 +5,7 @@
   <parameter name="browser" value = "chrome"></parameter>
     <classes>
       <class name="com.payasia.scripts.LoginTest">
-      <methods>
-      <include name="validLoginTest" />
-      </methods>
-    </class>
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

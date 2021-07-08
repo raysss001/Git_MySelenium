@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
   <reporter-output>
     <line>
       <![CDATA[Chrome Launched]]>
     </line>
     <line>
-      <![CDATA[Script Passed]]>
+      <![CDATA[Script Failed]]>
+    </line>
+    <line>
+      <![CDATA[Screenshot has been taken.]]>
     </line>
     <line>
       <![CDATA[Browser is closed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="55570" started-at="2021-07-08T05:28:45Z" finished-at="2021-07-08T05:29:41Z">
+  <suite name="Suite" duration-ms="126137" started-at="2021-07-08T06:48:22Z" finished-at="2021-07-08T06:50:29Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="55570" started-at="2021-07-08T05:28:45Z" finished-at="2021-07-08T05:29:41Z">
+    <test name="Test" duration-ms="126137" started-at="2021-07-08T06:48:22Z" finished-at="2021-07-08T06:50:29Z">
       <class name="com.payasia.scripts.LoginTest">
-        <test-method status="PASS" signature="setUp1(java.lang.String)[pri:0, instance:com.payasia.scripts.LoginTest@4439f31e]" name="setUp1" is-config="true" duration-ms="15988" started-at="2021-07-08T10:58:45Z" finished-at="2021-07-08T10:59:01Z">
+        <test-method status="PASS" signature="setUp1(java.lang.String)[pri:0, instance:com.payasia.scripts.LoginTest@4439f31e]" name="setUp1" is-config="true" duration-ms="14471" started-at="2021-07-08T12:18:23Z" finished-at="2021-07-08T12:18:37Z">
           <params>
             <param index="0">
               <value>
@@ -30,21 +33,67 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp1 -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.payasia.scripts.LoginTest@4439f31e]" name="validLoginTest" duration-ms="39007" started-at="2021-07-08T10:59:01Z" finished-at="2021-07-08T10:59:40Z">
+        <test-method status="FAIL" signature="invalidLoginTest1()[pri:0, instance:com.payasia.scripts.LoginTest@4439f31e]" name="invalidLoginTest1" duration-ms="109950" started-at="2021-07-08T12:18:37Z" finished-at="2021-07-08T12:20:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Wait limit exceeded : Logout Button -- Element Not Found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Wait limit exceeded : Logout Button -- Element Not Found.
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.payasia.generic.ListenerReport.logTestFailSnap(ListenerReport.java:222)
+	at com.payasia.generic.FunctionsLib.explicitWaitVisibility(FunctionsLib.java:138)
+	at com.payasia.pageobjects.LoginPage.verifyValidLoginMsg(LoginPage.java:79)
+	at com.payasia.scripts.LoginTest.invalidLoginTest1(LoginTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.payasia.scripts.LoginTest@4439f31e]" name="tearDown" is-config="true" duration-ms="280" started-at="2021-07-08T10:59:40Z" finished-at="2021-07-08T10:59:41Z">
+        </test-method> <!-- invalidLoginTest1 -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.payasia.scripts.LoginTest@4439f31e]" name="tearDown" is-config="true" duration-ms="1295" started-at="2021-07-08T12:20:27Z" finished-at="2021-07-08T12:20:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validLoginTest status=SUCCESS method=LoginTest.validLoginTest()[pri:0, instance:com.payasia.scripts.LoginTest@4439f31e] output={null}]]]>
+                <![CDATA[[TestResult name=invalidLoginTest1 status=FAILURE method=LoginTest.invalidLoginTest1()[pri:0, instance:com.payasia.scripts.LoginTest@4439f31e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Script Passed]]>
+              <![CDATA[Script Failed]]>
+            </line>
+            <line>
+              <![CDATA[Screenshot has been taken.]]>
             </line>
             <line>
               <![CDATA[Browser is closed]]>

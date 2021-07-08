@@ -6,7 +6,7 @@
     <classes>
       <class name="com.payasia.scripts.LoginTest">
       <methods>
-      <include name="invalidLoginTest1" />
+      <include name="validLoginTest" />
       </methods>
     </class>
     </classes>
