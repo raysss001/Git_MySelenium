@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 141.314 s <<< FAILURE! - in TestSuite
-com.payasia.scripts.LoginTest.invalidLoginTest1  Time elapsed: 83.588 s  <<< FAILURE!
-java.lang.AssertionError: Wait limit exceeded : Logout Button -- Element Not Found.
-	at com.payasia.scripts.LoginTest.invalidLoginTest1(LoginTest.java:41)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 58.109 s - in TestSuite
