@@ -68,7 +68,7 @@
 				<configuration>
 					<suiteXmlFiles>
 					<!--	<suiteXmlFile>testng.xml</suiteXmlFile> -->
-					<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+					<suiteXmlFile>${DsuiteXmlFile}</suiteXmlFile>
 					
 					</suiteXmlFiles>
 					<systemPropertyVariables>
