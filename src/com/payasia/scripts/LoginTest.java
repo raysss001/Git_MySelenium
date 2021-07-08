@@ -16,12 +16,12 @@ public class LoginTest extends FunctionsLib{
 	
 	
 	@Test
-	public void  validLoginTest() // space username, space password
+	public void  validLoginTest() // valid username, valid password
 	{
 		System.out.println("BROWSER NAME PASSED FROM JENKINS IS = ");
 		System.out.println(System.getProperty("BrowserName"));
 		LoginPage lp=new LoginPage(driver);
-		String username= ExcelUtils.readData("Login", 1, 2);
+		String username= ExcelUtils.readData("Login", 1, 1);
 		String password= ExcelUtils.readData("Login", 1, 2);
 		lp.login(username, password);
 		iSleep(10);
@@ -30,7 +30,7 @@ public class LoginTest extends FunctionsLib{
 		
 	}
 	
-	/*@Test
+	@Test
 	public void  invalidLoginTest1() // valid username, invalid password
 	{
 		LoginPage lp=new LoginPage(driver);
@@ -41,7 +41,7 @@ public class LoginTest extends FunctionsLib{
 		lp.verifyValidLoginMsg();	
 		
 		
-	}*/
+	}
 	
 	
 	

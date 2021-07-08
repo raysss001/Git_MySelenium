@@ -4,7 +4,11 @@
   <test name="Test">
   <parameter name="browser" value = "chrome"></parameter>
     <classes>
-      <class name="com.payasia.scripts.LoginTest"/>
+      <class name="com.payasia.scripts.LoginTest">
+      <methods>
+      <include name="validLoginTest" />
+      </methods>
+    </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
