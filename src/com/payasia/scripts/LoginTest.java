@@ -18,21 +18,26 @@ public class LoginTest extends FunctionsLib{
 	@Test
 	public void  validLoginTest() // valid username, valid password
 	{
-		System.out.println("BROWSER NAME PASSED FROM JENKINS IS = ");
+		System.out.print("BROWSER NAME PASSED FROM JENKINS IS ======= ");
 		System.out.println(System.getProperty("BrowserName"));
+		System.out.print("TESTNG FILE PASSED FROM JENKINS IS ======= ");
+		System.out.println(System.getProperty("suiteXmlFile"));
 		LoginPage lp=new LoginPage(driver);
 		String username= ExcelUtils.readData("Login", 1, 1);
 		String password= ExcelUtils.readData("Login", 1, 2);
 		lp.login(username, password);
 		iSleep(10);
 		lp.verifyValidLoginMsg();	
-		System.out.println(" HELLOOOOOOOOOOOOOOOOOOOOOOOOOOOO"+"BrowserName");
-		
+			
 	}
 	
 	@Test
 	public void  invalidLoginTest1() // valid username, invalid password
 	{
+		System.out.print("BROWSER NAME PASSED FROM JENKINS IS ======= ");
+		System.out.println(System.getProperty("BrowserName"));
+		System.out.print("TESTNG FILE PASSED FROM JENKINS IS ======== ");
+		System.out.println(System.getProperty("suiteXmlFile"));
 		LoginPage lp=new LoginPage(driver);
 		String username= ExcelUtils.readData("Login", 1, 1);
 		String password= ExcelUtils.readData("Login", 1, 1);
