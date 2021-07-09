@@ -4,8 +4,8 @@
   <test name="Test">
   <parameter name="browser" value = "chrome"></parameter>
     <classes>
-      <class name="com.payasia.scripts.LoginTest">
-      </class>
+      <class name="com.payasia.scripts.LoginTest"/>
+      <class name="com.payasia.scripts.LoginTest2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
