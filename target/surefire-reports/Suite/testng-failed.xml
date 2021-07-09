@@ -11,6 +11,13 @@
           <include name="invalidLoginTest1"/>
         </methods>
       </class> <!-- com.payasia.scripts.LoginTest -->
+      <class name="com.payasia.scripts.LoginTest2">
+        <methods>
+          <include name="invalidLoginTest1"/>
+          <include name="tearDown"/>
+          <include name="setUp1"/>
+        </methods>
+      </class> <!-- com.payasia.scripts.LoginTest2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

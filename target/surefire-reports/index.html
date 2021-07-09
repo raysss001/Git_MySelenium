@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\kiran\eclipse-workspace\MySelenium\testng1.xml</span>
+                    <span>C:\Users\kiran\eclipse-workspace\MySelenium\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -105,7 +105,31 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.payasia.scripts.LoginTest" hash-for-method="invalidLoginTest1">invalidLoginTest1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.payasia.scripts.LoginTest2" hash-for-method="invalidLoginTest1">invalidLoginTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.payasia.scripts.LoginTest" hash-for-method="validLoginTest">validLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.payasia.scripts.LoginTest2" hash-for-method="validLoginTest">validLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -130,20 +154,73 @@
                   <span class="method-name">invalidLoginTest1</span>
                   <div class="stack-trace">java.lang.AssertionError: Wait limit exceeded : Logout Button -- Element Not Found.
 	at org.junit.Assert.fail(Assert.java:88)
-	at com.payasia.generic.ListenerReport.logTestFailSnap(ListenerReport.java:222)
+	at com.payasia.generic.ListenerReport.logTestFailSnap(ListenerReport.java:223)
 	at com.payasia.generic.FunctionsLib.explicitWaitVisibility(FunctionsLib.java:138)
 	at com.payasia.pageobjects.LoginPage.verifyValidLoginMsg(LoginPage.java:79)
-	at com.payasia.scripts.LoginTest.invalidLoginTest1(LoginTest.java:41)
+	at com.payasia.scripts.LoginTest.invalidLoginTest1(LoginTest.java:46)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.payasia.scripts.LoginTest2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginTest1">
+                  </a> <!-- invalidLoginTest1 -->
+                  <span class="method-name">invalidLoginTest1</span>
+                  <div class="stack-trace">java.lang.AssertionError: Wait limit exceeded : Logout Button -- Element Not Found.
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.payasia.generic.ListenerReport.logTestFailSnap(ListenerReport.java:223)
+	at com.payasia.generic.FunctionsLib.explicitWaitVisibility(FunctionsLib.java:138)
+	at com.payasia.pageobjects.LoginPage.verifyValidLoginMsg(LoginPage.java:79)
+	at com.payasia.scripts.LoginTest2.invalidLoginTest1(LoginTest2.java:46)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.payasia.scripts.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginTest">
+                  </a> <!-- validLoginTest -->
+                  <span class="method-name">validLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.payasia.scripts.LoginTest2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginTest">
+                  </a> <!-- validLoginTest -->
+                  <span class="method-name">validLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\kiran\eclipse-workspace\MySelenium\testng1.xml</span>
+            <span class="header-content">C:\Users\kiran\eclipse-workspace\MySelenium\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -153,11 +230,8 @@
   &lt;test name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.payasia.scripts.LoginTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;invalidLoginTest1&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.payasia.scripts.LoginTest --&gt;
+      &lt;class name=&quot;com.payasia.scripts.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.payasia.scripts.LoginTest2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -171,7 +245,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,16 +271,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'invalidLoginTest1')
 data.setCell(0, 2, 'com.payasia.scripts.LoginTest')
-data.setCell(0, 3, 109950);
+data.setCell(0, 3, 84469);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'invalidLoginTest1')
+data.setCell(1, 2, 'com.payasia.scripts.LoginTest2')
+data.setCell(1, 3, 82361);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validLoginTest')
+data.setCell(2, 2, 'com.payasia.scripts.LoginTest')
+data.setCell(2, 3, 29885);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validLoginTest')
+data.setCell(3, 2, 'com.payasia.scripts.LoginTest2')
+data.setCell(3, 3, 29010);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -221,16 +307,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.payasia.scripts.LoginTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">validLoginTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -248,11 +327,52 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">invalidLoginTest1</span>
-                <span class="method-start">14471 ms</span>
+                <span class="method-start">8567 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=invalidLoginTest1 status=FAILURE method=LoginTest.invalidLoginTest1()[pri:0, instan...)</span>
-                <span class="method-start">124456 ms</span>
+                <span class="method-start">93046 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp1(chrome)</span>
+                <span class="method-start">94216 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLoginTest</span>
+                <span class="method-start">100466 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLoginTest status=SUCCESS method=LoginTest.validLoginTest()[pri:0, instance:com...)</span>
+                <span class="method-start">130361 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.payasia.scripts.LoginTest2</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp1(chrome)</span>
+                <span class="method-start">130626 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidLoginTest1</span>
+                <span class="method-start">137253 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginTest1 status=FAILURE method=LoginTest2.invalidLoginTest1()[pri:0, insta...)</span>
+                <span class="method-start">219615 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp1(chrome)</span>
+                <span class="method-start">220072 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLoginTest</span>
+                <span class="method-start">226488 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLoginTest status=SUCCESS method=LoginTest2.validLoginTest()[pri:0, instance:co...)</span>
+                <span class="method-start">255498 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
