@@ -25,8 +25,8 @@ public void extentReportsDemo() {
 	ExtentReports extent = new ExtentReports();  
 	extent.attachReporter(reporter);
 	ExtentTest logger = extent.createTest("LoginTest");
-	logger.log(Status.INFO,"Login to Amazon");
-	logger.log(Status.PASS, "Title Verified");
+	logger.log(Status.INFO,"EXTENT DEMO- Login to Amazon");
+	logger.log(Status.PASS,"EXTENT DEMO- Title Verified");
 	extent.flush();
 	
 	
