@@ -73,7 +73,7 @@ public class ListenerReport implements ITestListener, ISuiteListener {
 		reporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-output/extentReport/MyReport.html");
 		extent = new ExtentReports();  
 		extent.attachReporter(reporter);
-		logrepo = extent.createTest("LoginTest");
+		//logrepo = extent.createTest("LoginTest");
 		//logrepo.log(Status.INFO,"Login to Amazon"); //ACTUAL
 		//logrepo.log(Status.PASS, "Title Verifiedddddddddd");
 		//logrepo.log(Status.PASS, System.getProperty("BrowserName")); 
